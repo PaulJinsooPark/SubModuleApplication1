@@ -1,0 +1,3 @@
+[submodule "SubModuleTest"]
+	path = SubModuleTest
+	url = git@github.com:kitbetter-web/SubModuleTest.git

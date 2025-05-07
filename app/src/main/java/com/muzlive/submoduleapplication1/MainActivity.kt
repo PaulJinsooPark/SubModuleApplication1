@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.muzlive.submoduleapplication1.ui.theme.SubModuleApplication1Theme
+import com.muzlive.submoduletestmodule.TestModule
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
             SubModuleApplication1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = TestModule().test(),
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
